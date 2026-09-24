@@ -1,0 +1,16 @@
+{
+  "name": "404-cyber-store",
+  "owner": {
+    "name": "Nerakolo",
+    "url": "https://github.com/Nerakolox"
+  },
+  "description": "404赛博小卖部的 Claude Code 插件",
+  "plugins": [
+    {
+      "name": "foreman",
+      "source": "./",
+      "description": "给多仓项目搭 AI 工程：spec 契约、包工头 CLAUDE.md、子仓边界、按时机读取的细则、任务台账、联调任务单、目录戒律。",
+      "category": "productivity"
+    }
+  ]
+}
