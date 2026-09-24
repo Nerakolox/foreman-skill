@@ -9,7 +9,7 @@
     {
       "name": "foreman",
       "source": "./",
-      "description": "给多仓项目搭 AI 工程：spec 契约、包工头 CLAUDE.md、子仓边界、按时机读取的细则、任务台账、联调任务单、目录戒律。",
+      "description": "给多仓项目搭 AI 工程：spec 契约、包工头 CLAUDE.md、子仓边界、按时机读取的细则、任务台账、联调任务单、目录戒律。支持多仓、monorepo 和单仓。",
       "category": "productivity"
     }
   ]

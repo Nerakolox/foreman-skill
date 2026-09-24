@@ -1,4 +1,4 @@
-<!-- foreman 模板：子仓 CLAUDE.md。尖括号是占位，全部换成真实内容。<总管> 在 A 方案（总管包住子仓）写 `..`，在 B 方案（平级）写 `../<总管目录>`。所有路径都写相对本文件的路径，不写绝对路径。生成时删掉所有注释。整份不超过 200 行；放不下的长规范拆进 .agents/rules/。 -->
+<!-- foreman 模板：子仓 CLAUDE.md。尖括号是占位，全部换成真实内容。<总管> 是本文件到总管目录的相对路径：A 方案一般是 `..`，monorepo 按层级算（`apps/web/` 是 `../..`）；B 方案是 `../<总管目录>`，子仓不在总管旁边的按实际位置算。所有路径都写相对本文件的路径，不写绝对路径。生成时删掉所有注释。整份不超过 200 行；放不下的长规范拆进 .agents/rules/。 -->
 # <子仓名>：<一句话职责>
 
 <!-- B 方案才保留下面这一节，A 方案删掉。 -->
@@ -7,7 +7,7 @@
 本仓和总管平级，要这样启动才能读到总管规则和 spec：
 
 ```bash
-CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1 claude --add-dir ../<总管目录>
+CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1 claude --add-dir <总管>
 ```
 
 开工前自检：上下文里如果没有总管的 CLAUDE.md（《<项目名>》那份），说明启动方式不对，停下来让用户用上面的命令重启，不要凭记忆干活。
@@ -16,6 +16,7 @@ CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1 claude --add-dir ../<总管目录
 
 | 什么 | 路径 | 什么时候读 |
 | --- | --- | --- |
+| 总管规则 | `<总管>/CLAUDE.md` | Claude Code 启动时自动加载，不用再读；用别的 AI 工具时，开工前先读 |
 | 契约索引 | `<总管>/spec/INDEX.md` | 开工之前，找到这次涉及的章节 |
 | 任务台账 | `<总管>/plan/tasks.md` | 开工时、做完时，改自己那一行的状态 |
 | 联调任务单 | `<总管>/joint-tasks/` | 这次的活来自任务单时 |

@@ -1,8 +1,8 @@
 {
   "name": "foreman",
   "displayName": "foreman 包工头",
-  "description": "给多仓项目搭 AI 工程：spec 契约、包工头 CLAUDE.md、子仓边界、按时机读取的细则、任务台账、联调任务单、目录戒律。总管可以包住子仓，也可以和子仓平级。已有项目先体检再改造，新项目直接搭骨架。",
-  "version": "0.1.0",
+  "description": "给多仓项目搭 AI 工程：spec 契约、包工头 CLAUDE.md、子仓边界、按时机读取的细则、任务台账、联调任务单、目录戒律。总管可以包住子仓，也可以和子仓平级；支持 monorepo 和单仓精简版。每个 CLAUDE.md 旁边放一份 AGENTS.md 指路，Codex、Cursor、Gemini CLI 也读得到规则。已有项目先体检再改造，新项目直接搭骨架。",
+  "version": "0.2.0",
   "author": {
     "name": "Nerakolo",
     "url": "https://github.com/Nerakolox"
@@ -10,5 +10,5 @@
   "homepage": "https://github.com/Nerakolox/foreman-skill",
   "repository": "https://github.com/Nerakolox/foreman-skill",
   "license": "MIT",
-  "keywords": ["claude-md", "multi-repo", "monorepo", "spec", "agents", "project-setup"]
+  "keywords": ["claude-md", "multi-repo", "monorepo", "spec", "agents", "project-setup", "agents-md"]
 }
