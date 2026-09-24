@@ -7,8 +7,8 @@
     "name": "Nerakolo",
     "url": "https://github.com/Nerakolox"
   },
-  "homepage": "https://github.com/Nerakolox/foreman",
-  "repository": "https://github.com/Nerakolox/foreman",
+  "homepage": "https://github.com/Nerakolox/foreman-skill",
+  "repository": "https://github.com/Nerakolox/foreman-skill",
   "license": "MIT",
   "keywords": ["claude-md", "multi-repo", "monorepo", "spec", "agents", "project-setup"]
 }

@@ -19,15 +19,15 @@
 在 Claude Code 里运行：
 
 ```text
-/plugin marketplace add Nerakolox/foreman
+/plugin marketplace add Nerakolox/foreman-skill
 /plugin install foreman@404-cyber-store
 ```
 
 或者克隆下来，启动时指定插件目录：
 
 ```bash
-git clone https://github.com/Nerakolox/foreman
-claude --plugin-dir ./foreman
+git clone https://github.com/Nerakolox/foreman-skill
+claude --plugin-dir ./foreman-skill
 ```
 
 ## 两种摆法
