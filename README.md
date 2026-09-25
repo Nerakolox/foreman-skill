@@ -2,9 +2,9 @@
 
 <p align="center"><img src="foreman-logo.png" width="320" alt="foreman"></p>
 
-给多仓项目搭一套让 AI 守规矩的工程。来自抖音「404赛博小卖部」第 1 期《工程里怎么用 Claude Code》。
+给多仓项目搭一套让 AI 守规矩的工程。
 
-你给 AI 写了一千行规矩，它照样乱来：字段瞎编，别的仓乱改，根目录一堆垃圾文档。问题通常不在模型，在于没给它搭好工程。foreman 把视频里那套打法做成了 Claude Code 插件：
+你给 AI 写了一千行规矩，它照样乱来：字段瞎编，别的仓乱改，根目录一堆垃圾文档。问题通常不在模型，在于没给它搭好工程。foreman 把这套打法做成了 Claude Code 插件：
 
 - **spec**：各仓共用的契约，唯一真理源。别处只引章节号，不复制原文
 - **总管 CLAUDE.md 当包工头**：只派活、守契约、管目录、答疑，不写代码
@@ -101,7 +101,7 @@ setup 要通读所有 CLAUDE.md、规则文件和前后端的模型、路由代�
 
 ## 先拿示例试试
 
-`examples/messy-project/` 是一个虚构的四仓项目（app、backend、admin、web），故意埋了视频里讲的那些坑：208 行的根 CLAUDE.md、用 `@` 整份引进来的规范、前后端对不上的字段和错误码、根目录的调研笔记和过时的接口草稿，还有一份因为根目录有 CLAUDE.md 而根本不会被读取的 AGENTS.md。
+`examples/messy-project/` 是一个虚构的四仓项目（app、backend、admin、web），故意埋了常见的那些坑：208 行的根 CLAUDE.md、用 `@` 整份引进来的规范、前后端对不上的字段和错误码、根目录的调研笔记和过时的接口草稿，还有一份因为根目录有 CLAUDE.md 而根本不会被读取的 AGENTS.md。
 
 把它复制到别处，在里面运行 `/foreman:setup`，就能看到完整流程。四个子仓在真实项目里通常各自是 git 仓，用 `examples/make-demo.sh` 生成演示项目更接近实际：
 
