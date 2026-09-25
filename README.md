@@ -18,12 +18,17 @@
 
 `/foreman:setup` 和 `/foreman:audit` 要在 Claude Code 里跑。搭出来的工程别的 AI 工具也能用：规则写在 CLAUDE.md，每个 CLAUDE.md 旁边放一份 AGENTS.md，用 `@CLAUDE.md` 指过去，Codex、Cursor、Gemini CLI 读 AGENTS.md 就能找到规则。Claude Code 有 CLAUDE.md 时不读 AGENTS.md，所以这份文件不占它的上下文。自动加载上层目录的规则、B 方案的启动命令，是 Claude Code 才有的行为；别的工具靠 AGENTS.md 里那句「先读总管的 CLAUDE.md」。
 
-在 Claude Code 里运行：
+在 Claude Code 里分两次运行，先加插件市场，再装插件：
 
 ```text
 /plugin marketplace add Nerakolox/foreman-skill
-/plugin install foreman@404-cyber-store
 ```
+
+```text
+/plugin install foreman
+```
+
+你装过的别的市场里也有叫 foreman 的插件时，第二条改成 `/plugin install foreman@nerakolox`，指明从哪个市场装。
 
 或者克隆下来，启动时指定插件目录：
 

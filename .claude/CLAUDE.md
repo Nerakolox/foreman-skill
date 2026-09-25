@@ -4,7 +4,7 @@ Claude Code 插件 foreman 的源码。和用户交流、写文档都用中文�
 
 ## 结构
 
-- `.claude-plugin/`：`plugin.json` 是插件信息，`marketplace.json` 是上架清单（市场名 `404-cyber-store`，插件源就是仓库根目录）
+- `.claude-plugin/`：`plugin.json` 是插件信息，`marketplace.json` 是上架清单（市场名 `nerakolox`，插件源就是仓库根目录）
 - `skills/setup/`：`/foreman:setup`，搭工程的主流程。`reference/architecture.md` 是整套结构的定义，`reference/audit.md` 是体检清单，`templates/` 是生成文件用的模板
 - `skills/audit/`：`/foreman:audit`，只读体检，复用 `setup/reference/` 下的两份文件
 - `examples/messy-project/`：虚构的四仓示例项目，故意埋了各种问题，用来实测；`examples/make-demo.sh` 把它生成成各种结构的演示项目（A、B、monorepo、单仓、规则放在业务仓里）
